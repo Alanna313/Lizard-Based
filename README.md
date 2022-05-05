@@ -5,7 +5,7 @@
 
 #
 ![]( Screenshots/OTW.PNG)  
-# An overview on the Natas challenge on OverTheWire 
+# An overview on the Natas challenge 1-20 on OverTheWire 
   Natas is a Capture The Flag(CFT) wargame that teaches web security on OverTheWire.org.
   You are given password-protected websites and the goal is to somehow get the password to the next level, another password-protected website.
   Doig this Involves some sort of exploit like SQL injection, XSS, or a vulnerabilty on the source code. 
