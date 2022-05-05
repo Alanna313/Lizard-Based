@@ -1,8 +1,8 @@
-<p align="center">
-  <font size=11>
-  LizardBased
-  </font>  
+   <p align="center"> <font size=11>
+  LizardBase
+ </font>  
 </p> 
+
 ![]( Screenshots/OTW.PNG)
 # An overview on the Natas challenge on OverTheWire 
   Natas is a Capture The Flag(CFT) wargame that teaches web security on OverTheWire.org.
