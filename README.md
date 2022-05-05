@@ -3,10 +3,9 @@
 
    <p align="center">
    <img width="460" height="300" src="Screenshots/LizardBased Logo.jpg">
-  </p> 
-   <p align="center">
    <img width="460" height="300" src=Screenshots/OTW.PNG)>
   </p> 
+  
 # An overview on the Natas challenge on OverTheWire 
   Natas is a Capture The Flag(CFT) wargame that teaches web security on OverTheWire.org.
   You are given password-protected websites and the goal is to somehow get the password to the next level, another password-protected website.
