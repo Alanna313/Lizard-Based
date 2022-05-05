@@ -1,6 +1,6 @@
-   <p align="center"> 
-  <font size=20>LizardBase</font>  
-</p> 
+   <p align="center">
+   LizardBased
+  </p> 
 
 ![]( Screenshots/OTW.PNG)
 # An overview on the Natas challenge on OverTheWire 
