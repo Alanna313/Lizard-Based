@@ -2,7 +2,7 @@
 #   LizardBased
 
    <p align="center">
-   <img width="460" height="300" src="screenshots/LizardBased Logo.jpg">
+   <img width="460" height="300" src="Screenshots/LizardBased Logo.jpg">
   </p> 
 
 ![]( Screenshots/OTW.PNG)
