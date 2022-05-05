@@ -1,4 +1,4 @@
-# <p align="center">
+<p align="center">
   LizardBased
 </p> 
 ![]( Screenshots/OTW.PNG)
