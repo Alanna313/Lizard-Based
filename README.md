@@ -1,6 +1,6 @@
-   
-#   LizardBased
+ #   LizardBased
 ![]( Screenshots/LizardBased Logo.jpg)
+
 ![]( Screenshots/OTW.PNG)  
 # An overview on the Natas challenge on OverTheWire 
   Natas is a Capture The Flag(CFT) wargame that teaches web security on OverTheWire.org.
