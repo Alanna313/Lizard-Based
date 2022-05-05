@@ -1,4 +1,8 @@
-# Natas walkthrough 1-20
+![OTW](https://user-images.githubusercontent.com/31714690/167018691-b3cfb1f9-6843-4651-832f-a48a86b3affc.PNG)
+# Natas walkthrough 1-20  
+  Each level of natas consists of its own website located at http://natasX.natas.labs.overthewire.org, where X is the level number. There is no SSH login. To access a 
+  level, enter the username for that level (e.g. natas0 for level 0) and its password. Each level has access to the password of the next level. Your job is to somehow 
+  obtain that next password and level up
   
 # Natas1  
 -The problem: something here
