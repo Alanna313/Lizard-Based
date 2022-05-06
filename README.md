@@ -1,6 +1,6 @@
  #   LizardBased
    <p align="Left">
-  <img width="460" height="300" src="Screenshots/LizardBased Logo.jpg")
+  <img width="460" height="300" <img width="376" alt="Logo" src="https://user-images.githubusercontent.com/31714690/167225721-137e9695-b85b-4853-b1cd-f66afbfdffe3.png">)
  </p>
 
 #
