@@ -129,9 +129,9 @@ this is possible because ‘;’ separates commands in a shell.
 ![lvl 10 home page](https://user-images.githubusercontent.com/31714690/167221221-1042a3d1-c788-4256-bd9d-1f94761a9fd2.PNG)
 
 
--The problem: Given a search bar that gives results based on a word entered. 
+-The problem:
 
--The Solution: Looked at PHP code in the page source. Noticed possibility of command injection. In the search bar we inserted ‘.* /etc/natas_webpass/natas11’
+-The Solution:
 
 ![lvl 10 php code](https://user-images.githubusercontent.com/31714690/167221242-bd7dd9a6-87b7-47da-b7fb-26d0d12b5bbf.PNG)
 
@@ -155,7 +155,7 @@ in a cookie on the site, giving us our password for the next level.
 
 -The problem: File upload screen
 
--The Solution:
+-The Solution: Natas 12 gave us a place to upload a file. When we upload a file we can see it changes the end of the file to .jpg, an image file. We submit a php file that cats the etc file.. Once we send it in the website changes it to a .jpg we switch it back to .php using an interceptor program like burpsuite and we receive our password.
 
 ![Level 12 source code](https://user-images.githubusercontent.com/31714690/167222006-9c3ee466-5c39-454a-abee-a3ee8fb77d8c.png)
 
@@ -167,9 +167,10 @@ in a cookie on the site, giving us our password for the next level.
 # Natas13  
 
 
--The problem:
+-The problem: A file upload screen that only accepts image files.
 
--The Solution:
+-The Solution: Similarly to Natas12 this one gave us a file upload as well but now it only accepts image files, thwarting our previous attack. To get around this check we create a file containing the first bit of data from an image file to trick the check then continue as we did before.
+
   
 # Natas14  
 ![Level 14 prob](https://user-images.githubusercontent.com/31714690/167222253-959301b3-ed11-4574-9e00-e35bfe68b1a1.png)
@@ -177,7 +178,7 @@ in a cookie on the site, giving us our password for the next level.
 
 -The problem:
 
--The Solution:
+-The Solution:Natas14 required us to do a SQL injection style attack, where we take advantage of a web application database by adding a string of malicious code to a database query, in this case the username field. We put ” OR 1=1# into the username field, we succesfully taking over the logic of the query and forcing it to return true (the # will make sure that remaining of the query will be passed as comment)
 
 ![Level SQL injectin](https://user-images.githubusercontent.com/31714690/167222265-39fd38e6-46f1-4995-ad4e-382fcc7cfc8a.png)
 
@@ -190,7 +191,7 @@ in a cookie on the site, giving us our password for the next level.
 
 -The problem:
 
--The Solution:
+-The Solution:Here we have a blind SQL injection, we created a python script to brute force the password one character at a time.
 
 ![Level 15 dir](https://user-images.githubusercontent.com/31714690/167222365-6f2050cd-479c-4c50-8039-be31b9a1f916.png)
 
