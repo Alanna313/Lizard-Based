@@ -143,50 +143,133 @@ this is possible because ‘;’ separates commands in a shell.
 
 -The problem: Search bar to look for background color.
 
--The Solution:
+-The Solution: The data for this one is stored in an array named data. If the data from the array ‘showpassword’ is set to yes we receive the password.To do this we 
+have to go into the source code. When we look closer we find a variable called cookie. If we look at the site and look for document.cookie in the developer tools we 
+get a string of characters data=ClVLIh4ASCsCBE8lAxMacFMZV2hdVVotEhhUJQNVAmhSEV4sFxFeaAw%3D. The temp data shows us that this is JSON then XOR'd and then encoded 
+into base 64. Decoding these in python using the key we were given we get the key of “qw8Jqw8Jqw8Jqw8Jqw8Jqw8Jqw8Jqw8Jqw8Jqw8Jqw”. Now we use this to encode “yes” 
+in a cookie on the site, giving us our password for the next level.
   
 # Natas12  
--The problem:
+![Level 12 prob](https://user-images.githubusercontent.com/31714690/167221983-b23bd7e4-21b3-489e-858d-127ff8f11daa.png)
+
+
+-The problem: File upload screen
 
 -The Solution:
+
+![Level 12 source code](https://user-images.githubusercontent.com/31714690/167222006-9c3ee466-5c39-454a-abee-a3ee8fb77d8c.png)
+
+![Level 12 cod](https://user-images.githubusercontent.com/31714690/167222014-62639519-8b5a-4ea2-a0fe-95c0d06b2c96.png)
+
+![Level 12 answer](https://user-images.githubusercontent.com/31714690/167222022-6527a3f8-5819-496d-8860-09f013b0f1bd.png)
+
   
 # Natas13  
+
+
 -The problem:
 
 -The Solution:
   
 # Natas14  
+![Level 14 prob](https://user-images.githubusercontent.com/31714690/167222253-959301b3-ed11-4574-9e00-e35bfe68b1a1.png)
+
+
 -The problem:
 
 -The Solution:
+
+![Level SQL injectin](https://user-images.githubusercontent.com/31714690/167222265-39fd38e6-46f1-4995-ad4e-382fcc7cfc8a.png)
+
+![Level 14 answer](https://user-images.githubusercontent.com/31714690/167222276-c22989d2-73f6-46bb-b21e-fb53d86cbb3f.png)
+
   
 # Natas15  
+![Level 15 prob](https://user-images.githubusercontent.com/31714690/167222351-33ea8c18-4f33-490a-947d-8ccabac3ece8.png)
+
+
 -The problem:
 
 -The Solution:
+
+![Level 15 dir](https://user-images.githubusercontent.com/31714690/167222365-6f2050cd-479c-4c50-8039-be31b9a1f916.png)
+
+![Level 15 dirbuster](https://user-images.githubusercontent.com/31714690/167222373-04ff8af1-6069-4b70-af5f-89d3cdaa3766.png)
+
+![Level 15 answer](https://user-images.githubusercontent.com/31714690/167222378-7294c48f-6fec-4aa5-b772-122171f1cf1d.png)
+
   
 # Natas16  
+
+![Level 16 prob](https://user-images.githubusercontent.com/31714690/167222439-d9e7c58a-cde7-41cb-984e-cc3cff39a1e7.png)
+
 -The problem:
 
--The Solution:
-  
+-The Solution: Here we used command injection in the search field. We used $() as command separators. Injected $(grep -E ^x.* /etc/natas_webpass/natas17) to determine if the password starts with letter X. Created a python script to solve password. 
+
+![Level 16 php](https://user-images.githubusercontent.com/31714690/167222451-06b7e7da-814c-48b5-a2bb-a9d86fea1570.png)
+
+
+![Level 16 script](https://user-images.githubusercontent.com/31714690/167222461-e74c96af-6db1-478e-a13b-527c9cf24029.png)
+
+
+![Level 16 answer](https://user-images.githubusercontent.com/31714690/167222491-dff7467e-ebdb-4bcb-ad36-7709b5248104.png)
+
 # Natas17  
+![Level 17 prob](https://user-images.githubusercontent.com/31714690/167222662-2e0bce6a-6417-4532-a33d-998b9f7a9b3c.png)
+
+![Level 17 php](https://user-images.githubusercontent.com/31714690/167222710-f6224544-979f-43cc-b89b-8d0c64193d52.png)
+
 -The problem:
 
--The Solution:
-  
+-The Solution: This is similar to the previous question, but had to use the SLEEP statement to determine if injection was TRUE or FALSE. Modified Python script to append the SLEEP statement.
+
+![Level 17 script](https://user-images.githubusercontent.com/31714690/167222721-5c471f9e-5769-44d7-953b-2cdcc0bc2bf6.png)
+
+![Level 17 answer](https://user-images.githubusercontent.com/31714690/167222726-5e3dace6-1775-41ed-9d45-bd730ba66541.png)
+
 # Natas18  
--The problem:
+![Level 18 prob](https://user-images.githubusercontent.com/31714690/167222815-62c946e4-066f-46b0-901a-dbe8d4755f01.png)
 
--The Solution:
+
+![Level 18 php](https://user-images.githubusercontent.com/31714690/167222882-5d49c618-566a-46a6-a9f4-aa41f1e53fc8.png)
+
+-The problem: Login with an admin account
+
+-The Solution: Brute forced the PHPSESSID, which is a value between 0-640. We created a Python script to automate the brute force.
+
+![Level 18 script](https://user-images.githubusercontent.com/31714690/167222888-2c533208-284d-46b6-a51e-88de3452af5f.png)
+
+![Level 18 answer](https://user-images.githubusercontent.com/31714690/167222897-5a4067f2-f425-4a8a-a120-d7c10e2d2a78.png)
   
 # Natas19  
--The problem:
+![Level 19 prob](https://user-images.githubusercontent.com/31714690/167223006-36b1016f-ce80-4c67-a652-577ae86ed8b2.png)
 
--The Solution:
+![Level 19 php](https://user-images.githubusercontent.com/31714690/167223074-94412fb3-6298-4a2a-9753-44097e29f554.png)
+
+-The problem: Login with an admin account
+
+-The Solution: Here we had to decode the cookie value which was in ASCII, slightly modified the Python code from Natas19 to match the cookie format on this problem.
+
+![Level 19 script](https://user-images.githubusercontent.com/31714690/167223061-ac51b8ed-7702-4363-8815-840620af4e3b.png)
+
+![Level 19 answer](https://user-images.githubusercontent.com/31714690/167223066-14e394eb-92bc-4619-a5d0-a1cfbd1cc11d.png)
+
   
 # Natas20  
--The problem:
+![Level 20 prob](https://user-images.githubusercontent.com/31714690/167223156-d9730296-55b8-489f-a5f3-b8053764822b.png)
 
--The Solution:
- 
+
+-The problem: Presented with a empty field waiting for 'Your Name' input
+
+
+![Level 20 php](https://user-images.githubusercontent.com/31714690/167223286-0ea95e9f-31b0-47b7-afce-b2fd26d7a4e0.png)
+
+-The Solution: On this challenge, we exploited a vulnerability on the debug function for this website. We inserted a key/value pair of admin:1 to have the page 
+return the answer.
+
+![Level 20 path](https://user-images.githubusercontent.com/31714690/167223255-813658c0-2a7c-4ad8-a696-cf8f75c65e03.png)
+
+![Level 20 answer](https://user-images.githubusercontent.com/31714690/167223272-8e90e765-6c95-4746-9e18-3fafb3830076.png)
+
+
