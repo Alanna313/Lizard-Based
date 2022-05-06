@@ -176,7 +176,7 @@ in a cookie on the site, giving us our password for the next level.
 ![Level 14 prob](https://user-images.githubusercontent.com/31714690/167222253-959301b3-ed11-4574-9e00-e35bfe68b1a1.png)
 
 
--The problem:
+-The problem: Natas 14 provided us with a username and password log in screen
 
 -The Solution:Natas14 required us to do a SQL injection style attack, where we take advantage of a web application database by adding a string of malicious code to a database query, in this case the username field. We put ” OR 1=1# into the username field, we succesfully taking over the logic of the query and forcing it to return true (the # will make sure that remaining of the query will be passed as comment)
 
@@ -189,9 +189,9 @@ in a cookie on the site, giving us our password for the next level.
 ![Level 15 prob](https://user-images.githubusercontent.com/31714690/167222351-33ea8c18-4f33-490a-947d-8ccabac3ece8.png)
 
 
--The problem:
+-The problem: Natas 15 Provided us with just a username screen where we can check if a user exists. 
 
--The Solution:Here we have a blind SQL injection, we created a python script to brute force the password one character at a time.
+-The Solution:Here we have a blind SQL injection,'natas16" AND password LIKE BINARY "' we created a python script to brute force the password one character at a time.
 
 ![Level 15 dir](https://user-images.githubusercontent.com/31714690/167222365-6f2050cd-479c-4c50-8039-be31b9a1f916.png)
 
