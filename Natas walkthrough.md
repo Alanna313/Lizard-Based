@@ -129,9 +129,9 @@ this is possible because ‘;’ separates commands in a shell.
 ![lvl 10 home page](https://user-images.githubusercontent.com/31714690/167221221-1042a3d1-c788-4256-bd9d-1f94761a9fd2.PNG)
 
 
--The problem:
+-The problem: Given a search bar that gives results based on a word entered. 
 
--The Solution:
+-The Solution: Looked at PHP code in the page source. Noticed possibility of command injection. In the search bar we inserted ‘.* /etc/natas_webpass/natas11’
 
 ![lvl 10 php code](https://user-images.githubusercontent.com/31714690/167221242-bd7dd9a6-87b7-47da-b7fb-26d0d12b5bbf.PNG)
 
