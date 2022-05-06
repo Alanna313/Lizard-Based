@@ -165,11 +165,16 @@ in a cookie on the site, giving us our password for the next level.
 
   
 # Natas13  
+<img width="806" alt="Level 13 prob" src="https://user-images.githubusercontent.com/31714690/167226621-0458485c-1631-4cce-b770-7e09ac602908.png">
 
 
 -The problem: A file upload screen that only accepts image files.
 
 -The Solution: Similarly to Natas12 this one gave us a file upload as well but now it only accepts image files, thwarting our previous attack. To get around this check we create a file containing the first bit of data from an image file to trick the check then continue as we did before.
+
+![Level 13 php](https://user-images.githubusercontent.com/31714690/167226630-98463ec2-3075-4fac-b633-8cbd31c00d36.png)
+
+![level 13 answewr](https://user-images.githubusercontent.com/31714690/167226634-63add753-3ed8-4c44-b114-5a644624c630.png)
 
   
 # Natas14  
@@ -204,7 +209,7 @@ in a cookie on the site, giving us our password for the next level.
 
 ![Level 16 prob](https://user-images.githubusercontent.com/31714690/167222439-d9e7c58a-cde7-41cb-984e-cc3cff39a1e7.png)
 
--The problem:
+-The problem: Given a serach bar to find words
 
 -The Solution: Here we used command injection in the search field. We used $() as command separators. Injected $(grep -E ^x.* /etc/natas_webpass/natas17) to determine if the password starts with letter X. Created a python script to solve password. 
 
@@ -221,7 +226,7 @@ in a cookie on the site, giving us our password for the next level.
 
 ![Level 17 php](https://user-images.githubusercontent.com/31714690/167222710-f6224544-979f-43cc-b89b-8d0c64193d52.png)
 
--The problem:
+-The problem: Empty field to type in a username.
 
 -The Solution: This is similar to the previous question, but had to use the SLEEP statement to determine if injection was TRUE or FALSE. Modified Python script to append the SLEEP statement.
 
