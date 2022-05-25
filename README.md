@@ -15,7 +15,7 @@
 # Inside the repository
  Within this repository, you will find a file named "natas walkthrough.md", which gives a breakdown, step-by-step walkthrough on how to complete the Natas challenges 1-20 if you are ever stuck! We've decided to put this up for those who have an interest in completing the walkthrough, so they can go ahead and knock out the challenges and overall grasp a better understanding of the challenges and how they play a role within the CyberSecurity world! 
   
-# I've never heard of OverTheWire, But would like to Try!
+# I've never heard of OverTheWire, but would like to Try!
   Sounds Awesome! You can try on your own by visiting:
   https://overthewire.org
   once you are on the site, you can select on any challenge they have availble on the left.
